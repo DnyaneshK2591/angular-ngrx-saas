@@ -1,24 +1,33 @@
 @import '../../styles.scss';
 
-.container{
-    border: 1px solid red;
-    width: 240px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: color(card-shadow);
+  width: 240px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
 }
-p{
-    font-size: size(xs);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-            line-clamp: 4; 
-    -webkit-box-orient: vertical;
+h1 {
+  margin-bottom: 6px;
+}
+h2 {
+  margin-bottom: 6px;
+}
+p {
+  font-size: size(xs);
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
