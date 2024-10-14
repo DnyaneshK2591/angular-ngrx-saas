@@ -18,34 +18,29 @@ h2 {
 p {
   font-size: size(xs);
   margin-bottom: 6px;
-  height: 120px;
-  
+  height: 100px;
+  text-align: justify;
+  text-justify: inter-word;
 }
-.button-green{
-    background-color: #04AA6D;
-    border: 1px solid green;
-    color: color(white);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: size(xs);
-    cursor: pointer;
-    float: left;
-    margin-bottom: 6px;
+.button-green {
+  background-color: #04aa6d;
+  border: 1px solid green;
+  color: color(white);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: size(xs);
+  cursor: pointer;
+  margin-bottom: 6px;
 }
-.button-orange{
-    background-color: color(quaternary);
-    border: 1px solid orange;
-    color: color(white);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: size(xs);
-    cursor: pointer;
-    float: left;
-    margin-bottom: 6px;
+.button-orange {
+  background-color: color(quaternary);
+  border: 1px solid orange;
+  color: color(white);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: size(xs);
+  cursor: pointer;
+  margin-bottom: 6px;
 }
 img {
   width: 100%;
