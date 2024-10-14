@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: color(quaternary);
+  font-size: size(lg);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: color(white);
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: color(black);
+}

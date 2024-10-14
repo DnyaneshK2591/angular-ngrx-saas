@@ -1,0 +1,24 @@
+@import '../../styles.scss';
+
+.container{
+    border: 1px solid red;
+    width: 240px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+p{
+    font-size: size(xs);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
