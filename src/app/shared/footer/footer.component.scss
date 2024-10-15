@@ -1,0 +1,74 @@
+@import '../../../styles.scss';
+
+.container {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+.socialconnect {
+  min-height: 60px;
+  min-width: 400px;
+  background-color: color(darkgreen);
+  padding: 12px;
+  color: color(white);
+  align-content: center;
+  font-size: size(ntl);
+}
+.copyright {
+  background-color: color(black);
+  padding: 12px;
+  min-height: 60px;
+  min-width: 400px;
+  color: color(white);
+  font-size: size(xs);
+  text-align: center;
+
+  @include response(sm) {
+    @include singleLineText;
+    text-align: start;
+  }
+}
+.footer-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0;
+
+  min-width: 400px;
+  justify-content: flex-start;
+  background-color: color(white);
+
+  @include response(sm) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.companyinfo {
+  width: 25%;
+  height: 100%;
+  @include response(sm) {
+    width: 100%;
+    text-align: justify;
+  }
+}
+.ul-products {
+  width: 25%;
+}
+.products {
+  height: 100%;
+  list-style-type: none;
+}
+.usefullinks {
+  height: 100%;
+  list-style-type: none;
+}
+.contact {
+  width: 25%;
+  height: 100%;
+}
+.footer-desc-text {
+  font-size: size(ntm);
+}
+li {
+  font-size: size(ntm);
+}

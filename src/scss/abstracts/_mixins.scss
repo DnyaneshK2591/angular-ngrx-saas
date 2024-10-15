@@ -1,8 +1,3 @@
-@mixin flexPosition($justCont: center, $alignIte: center) {
-  display: flex;
-  justify-content: $justCont;
-  align-items: $alignIte;
-}
 @mixin response($breakpoint) {
   @if ($breakpoint == xl) {
     @media (max-width: 1200px) {
@@ -27,4 +22,31 @@
       @content;
     }
   }
+}
+
+@mixin singleLineText() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin multiLineText($no_of_lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $no_of_lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin gridLayout() {
+  display: grid;
+  // grid-template-rows: auto auto auto auto;
+  // grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(360px, 1fr));
+
+  grid-column-gap: initial;
+  gap: 24px;
+  align-content: center;
+  list-style-type: none;
+  margin: 24px;
 }

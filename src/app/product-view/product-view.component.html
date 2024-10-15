@@ -1,5 +1,12 @@
 <app-nav-bar></app-nav-bar>
-
-<div class="container">
-  <app-product-item />
-</div>
+<ul>
+  <div class="container">
+    <ng-container *ngFor="let item of products$">
+      <li>
+        <app-product-item [product]="item" (handleAdd)="addItemToCart($event)">
+        </app-product-item>
+      </li>
+    </ng-container>
+  </div>
+</ul>
+<app-footer></app-footer>
